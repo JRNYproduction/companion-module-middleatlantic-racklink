@@ -1,0 +1,38 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "middleatlantic-racklink",
+	"name": "middleatlantic-racklink",
+	"shortname": "racklink",
+	"description": "Middle Atlantic RackLink power controllers (Select, Premium, Premium+) with full outlet feedback",
+	"version": "0.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-middleatlantic-racklink.git",
+	"bugs": "https://github.com/bitfocus/companion-module-middleatlantic-racklink/issues",
+	"maintainers": [
+		{
+			"name": "YOUR NAME",
+			"email": "YOUR EMAIL"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../src/main.js"
+	},
+	"manufacturer": "Middle Atlantic",
+	"products": [
+		"RackLink Select (RLNK-415, 915R, 920R, ...)",
+		"RackLink Premium",
+		"RackLink Premium+"
+	],
+	"keywords": [
+		"power",
+		"pdu",
+		"sequencer",
+		"racklink",
+		"legrand"
+	]
+}

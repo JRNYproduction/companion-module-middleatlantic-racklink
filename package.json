@@ -1,0 +1,31 @@
+{
+	"name": "middleatlantic-racklink",
+	"version": "2.0.0",
+	"description": "Bitfocus Companion module for Middle Atlantic RackLink power controllers (Select, Premium, Premium+) with live outlet feedback",
+	"type": "module",
+	"main": "src/main.js",
+	"scripts": {
+		"format": "prettier -w .",
+		"package": "companion-module-build",
+		"mock": "node tools/mock-racklink.js",
+		"test": "node tools/test-protocol.js"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bitfocus/companion-module-middleatlantic-racklink.git"
+	},
+	"engines": {
+		"node": "^22.18",
+		"yarn": "^4"
+	},
+	"dependencies": {
+		"@companion-module/base": "~2.0.4"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^3.1.1",
+		"prettier": "^3.6.2"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json",
+	"packageManager": "yarn@4.18.1"
+}
